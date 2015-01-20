@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="banner">
+<%= image_tag("rails.png", :size => "100*50") %>
+Hello Ciara!
+</div>
 
+<div id ="columns">
+<ul>
+<li><%= link_to "Questions"%></li>
+<li><%= link_to "Movie News", 'http://oscar.go.com/nominees' %></li>
+<li><%= link_to "Movies", movies_path%></li>
+</ul>
+</div>
+<%= yield %>
+<h2>This is a footer </h2>
 </body>
 </html>
